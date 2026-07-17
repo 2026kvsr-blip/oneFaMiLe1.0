@@ -5,6 +5,7 @@ Part 1A.3
 
 ===================================== */
 
+
 /* WELCOME SCREEN */
 const menuBtn =
 document.getElementById("menuBtn");
@@ -570,6 +571,7 @@ document.getElementById("incomeBack").onclick=showHome;
 
 
 healthBtn.onclick = ()=>{
+    
 
     setActiveButton(healthBtn);
 
@@ -654,7 +656,7 @@ id="healthSearch"
 class="grid-btn">
 
 <img
-src="images/health/CustomSearch1.png"
+src="images/colorbtns/CustomSearch1.png"
 class="btn-icon">
 
 <span>
