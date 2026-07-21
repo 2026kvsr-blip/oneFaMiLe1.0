@@ -2386,21 +2386,31 @@ class="back-btn">
 
 `);
 
-document.getElementById("catReports").onclick=()=>{
+document.getElementById("catReports").onclick = ()=>{
 
-reportsLayout(module+" Reports");
-
-};
-
-document.getElementById("catSensitive").onclick=()=>{
-
-openSensitive(module,"Sensitive Reports");
+    reportsLayout(
+        module + " Reports",
+        ()=>reportCategory(module, fromBottomReports)
+    );
 
 };
 
-document.getElementById("catAll").onclick=()=>{
+document.getElementById("catSensitive").onclick = ()=>{
 
-openSensitive(module,"All Reports");
+    openSensitive(
+        module,
+        "Sensitive Reports",
+        ()=>reportCategory(module, fromBottomReports)
+    );
+
+};
+document.getElementById("catAll").onclick = ()=>{
+
+    openSensitive(
+        module,
+        "All Reports",
+        ()=>reportCategory(module, fromBottomReports)
+    );
 
 };
 
@@ -2528,25 +2538,27 @@ class="back-btn">
 
 document.getElementById("loanLendRpt").onclick=()=>{
 
-reportCategory("Loan - Lend");
+reportCategory("Loan - Lend", true);
+
 
 };
 
 document.getElementById("loanBorrowRpt").onclick=()=>{
 
-reportCategory("Loan - Borrowed");
+reportCategory("Loan - Borrowed", true);
 
 };
 
 document.getElementById("paymentLendRpt").onclick=()=>{
 
-reportCategory("Payments - Lend");
+reportCategory("Payments - Lend", true);
+
 
 };
 
 document.getElementById("paymentBorrowRpt").onclick=()=>{
 
-reportCategory("Payments - Borrowed");
+reportCategory("Payments - Borrowed", true);
 
 };
 
