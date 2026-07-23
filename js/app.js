@@ -841,7 +841,7 @@ type === "Loan"
 <button id="lendBtn" class="grid-btn">
 
 <img
-src="images/colorbtns/LoansLend1.png"
+src="images/colorbtns/Lend1.png"
 class="btn-icon">
 
 <span>
@@ -855,7 +855,7 @@ Lend
 <button id="borrowBtn" class="grid-btn">
 
 <img
-src="images/colorbtns/LoansBorrowed1.png"
+src="images/colorbtns/Borrowed1.png"
 class="btn-icon">
 
 <span>
