@@ -5,7 +5,6 @@ Part 1A.3
 
 ===================================== */
 
-
 /* WELCOME SCREEN */
 const menuBtn =
 document.getElementById("menuBtn");
@@ -1004,34 +1003,35 @@ class="back-btn">
 
 `);
 
-document.getElementById(
-"lendReports"
-).onclick=()=>{
+document.getElementById("lendReports").onclick = ()=>{
 
-reportsLayout(
-type + " - Lend Reports"
-);
-
-};
-
-document.getElementById("lendSensitive").onclick=()=>{
-
-openSensitive(
-type + " - Lend",
-"Sensitive Reports"
-);
+    reportsLayout(
+        type + " - Lend Reports",
+        ()=>showLendBorrow(type)
+    );
 
 };
 
-document.getElementById("lendAll").onclick=()=>{
+document.getElementById("lendSensitive").onclick = ()=>{
 
-openSensitive(
-type + " - Lend",
-"All Reports"
-);
+    openSensitive(
+        type + " - Lend",
+        "Sensitive Reports",
+        ()=>showLendBorrow(type)
+    );
 
 };
 
+document.getElementById("lendAll").onclick = ()=>{
+
+    openSensitive(
+        type + " - Lend",
+        "All Reports",
+        ()=>showLendBorrow(type)
+    );
+
+};
+    
 document.getElementById(
 "lendBack"
 ).onclick=()=>{
@@ -1162,34 +1162,34 @@ class="back-btn">
 
 `);
 
-document.getElementById(
-"borrowReports"
-).onclick=()=>{
+document.getElementById("borrowReports").onclick = ()=>{
 
-reportsLayout(
-type + " - Borrowed Reports"
-);
-
-};
-
-document.getElementById("borrowSensitive").onclick=()=>{
-
-openSensitive(
-type + " - Borrowed",
-"Sensitive Reports"
-);
+    reportsLayout(
+        type + " - Borrowed Reports",
+        ()=>showLendBorrow(type)
+    );
 
 };
 
-document.getElementById("borrowAll").onclick=()=>{
+document.getElementById("borrowSensitive").onclick = ()=>{
 
-openSensitive(
-type + " - Borrowed",
-"All Reports"
-);
+    openSensitive(
+        type + " - Borrowed",
+        "Sensitive Reports",
+        ()=>showLendBorrow(type)
+    );
 
 };
 
+document.getElementById("borrowAll").onclick = ()=>{
+
+    openSensitive(
+        type + " - Borrowed",
+        "All Reports",
+        ()=>showLendBorrow(type)
+    );
+
+};
   
 document.getElementById(
 "borrowBack"
