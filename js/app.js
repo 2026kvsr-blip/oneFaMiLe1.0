@@ -5,6 +5,7 @@ Part 1A.3
 
 ===================================== */
 
+
 /* WELCOME SCREEN */
 const menuBtn =
 document.getElementById("menuBtn");
@@ -2148,7 +2149,8 @@ homeBtn.click();
 };
 
 function reportsLayout(title, backFunction){
-
+homeContent.scrollTop = 0;
+    window.scrollTo(0,0);
 showPage(`
 
 <h2 class="page-title">
